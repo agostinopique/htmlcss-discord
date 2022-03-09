@@ -78,6 +78,7 @@ nav ul li{
 nav ul li a{
   text-decoration: none;
   text-transform: capitalize;
+  color: white;
 }
 
 .head-logo {
@@ -158,7 +159,6 @@ h2 {
   float: left;
   width: calc(50% - 10px);
   padding-top: 20px;
-  vertical-align: middle;
 }
 
 div .section-text {
@@ -199,8 +199,39 @@ div .section-text {
 /* FOOTER */
 
 footer {
-  height: 300px;
+  height: 300px;   
   width: 100%;
-  background-color: crimson;
+  background-color: #23272A;
+  color: white;
 }
 
+.foot-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.lang-social span {
+  display: block;
+  margin: 10px;
+}
+.foot-list .lang-social .lingua img{
+  width: 2%;
+}
+
+.foot-list .list ul li{
+  text-transform: capitalize;
+  padding: 5px 0;
+  list-style: none;
+}
+.foot-list .list ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.list ul a:first-child{
+  text-decoration: #7289DA;
+}
+
+.foot-list div{
+  float: left;
+}
