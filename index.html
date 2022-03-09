@@ -44,13 +44,14 @@
   </header>
   <!-- JUMBOTRON  -->
   <div class="jumbotron">
-    <div class="jumbo-text">
-      <h2>Il tuo posto per parlare</h2>
-      <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunit&aacute; artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo insieme, Discord rende pi&uacute; facile chiacchierare ogni giorno e ritrovarsi pi&uacute; spesso.</p>
-    </div>
-    <div class="jumbo-buttons">
+    <div class="jumbo-section">
+      <div class="jumbo-text">
+        <h2>Il tuo posto per parlare</h2>
+        <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunit&aacute; artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo insieme, Discord rende pi&uacute; facile chiacchierare ogni giorno e ritrovarsi pi&uacute; spesso.</p>
+      </div>
       <button class="big white"><i class="fa-solid fa-arrow-down-long"></i>scarica per mac</button>
       <button class="big dark">Apri Discord nel tuo browser</button>
+
     </div>
   </div>
 
@@ -126,7 +127,7 @@
   <!-- /MAIN BODY -->
 
   <!-- BOTTOM PORTION -->
-  <footer>
+  <footer class="clearfix">
 
     <!-- LIST SECTION -->
     <section class="foot-list clearfix">
@@ -147,7 +148,7 @@
 
       <div class="list">
         <ul>
-          <li><a href="#">prodotto</a></li>
+          <li><a class="first-of-list" href="#"><span>prodotto</span></a></li>
           <li><a href="#">Scarica</a></li>
           <li><a href="#">Perch&eacute; Discord</a></li>
           <li><a href="#">Nitro</a></li>
@@ -159,7 +160,8 @@
       
       <div class="list">
         <ul>
-          <li><a href="#">compagnia</a></li>
+          <li><a class="first-of-list" href="#"><span>compagnia</span>
+          </a></li>
           <li><a href="#">chi siamo</a></li>
           <li><a href="#">lavora con noi</a></li>
           <li><a href="#">marchio</a></li>
@@ -170,7 +172,7 @@
       
       <div class="list">
         <ul>
-          <li><a href="#">risorse</a></li>
+          <li><a class="first-of-list" href="#"><span>risorse</span> </a></li>
           <li><a href="#">Scarica</a></li>
           <li><a href="#">Perch&eacute; Discord</a></li>
           <li><a href="#">Nitro</a></li>
@@ -187,7 +189,7 @@
 
       <div class="list">
         <ul>
-          <li><a href="#">norme</a></li>
+          <li><a class="first-of-list" href="#"><span>norme</span></a></li>
           <li><a href="#">Scarica</a></li>
           <li><a href="#">Perch&eacute; Discord</a></li>
           <li><a href="#">Nitro</a></li>
@@ -199,13 +201,18 @@
     </section>
     <!-- /LIST SECTION -->
 
-    <hr>
 
     <!-- BOTTOM SECTION -->
-    <section class="foot-bottom"></section>
+    <section class="foot-bottom clearfix">
+      <a href="#"><img src="./assets/img/logo.svg" alt="discord-logo"></a>
+      <button class="bottone-opaco">Registrati</button>
+    </section>
     <!-- /BOTTOM SECTION -->
 
   </footer>
 
 </body>
 </html>
+
+
+<!-- Jumbotron text position absolute -->

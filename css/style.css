@@ -20,6 +20,7 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+  max-width: 1000px;
 }
 
 /* UTILITY */
@@ -29,6 +30,7 @@ button {
   border: none;
   margin: 0 20px;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 button.big {
@@ -44,6 +46,11 @@ button.dark {
   color: white;
 }
 
+.bottone-opaco {
+  background-color: #8EA1E1;
+  color: white;
+}
+
 .fa-solid {
   padding-right: 5px;
 }
@@ -52,7 +59,6 @@ button.dark {
 
 header {
   background-color: #3161E0;
-  height: 50px;
   width: 100%;
   line-height: 50px;
 }
@@ -112,16 +118,23 @@ nav ul li a{
   height: 350px;
   width: 100%;
   color: white;
+  position: relative;
 }
 
 .jumbotron div {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 60px;
 }
 
-.jumbo-text h2{
+.jumbo-section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jumbo-text {
   padding-bottom: 20px;
 }
 
@@ -168,16 +181,16 @@ div .section-text {
 
 /* LAST SECTION */
 
-.special-section{
+main .special-section{
   width: 100%;
   text-align: center;
 }
 
-.straight-text {
+.special-section .straight-text {
   padding: 60px 0;
 }
 
-.text-button {
+.special-section .text-button {
   margin-bottom: 50px;
 }
 
@@ -191,31 +204,35 @@ div .section-text {
   margin: 10px auto;
 }
 
-.bottone-opaco {
-  background-color: #8EA1E1;
-  color: white;
-}
+
 
 /* FOOTER */
 
 footer {
-  height: 300px;   
   width: 100%;
   background-color: #23272A;
   color: white;
 }
 
-.foot-list {
+footer .foot-list {
   width: 80%;
   margin: 0 auto;
+  padding: 40px 0;
+  border-bottom: 2px solid #4A5882;
 }
 
-.lang-social span {
+.lang-social .lingua, .lang-social .icone {
   display: block;
   margin: 10px;
 }
+
 .foot-list .lang-social .lingua img{
-  width: 2%;
+  width: 10%;
+}
+
+.lang-social .icone .fa-brands{
+  padding: 10px 5px;
+  cursor: pointer;
 }
 
 .foot-list .list ul li{
@@ -223,15 +240,43 @@ footer {
   padding: 5px 0;
   list-style: none;
 }
+
 .foot-list .list ul li a{
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
+  font-size: .9rem;
 }
 
-.list ul a:first-child{
-  text-decoration: #7289DA;
+.foot-list .list ul li a:hover{
+  color: #3161E0;
 }
+
 
 .foot-list div{
   float: left;
+  margin: 0 20px;
+}
+
+.foot-list .lang-social{
+  width: 150px;
+  margin-right: 100px;
+}
+
+.first-of-list span, h3 {
+  color: #7289DA;
+}
+
+footer .foot-bottom {
+  width: 80%;
+  margin: 10px auto;
+
+}
+
+.foot-bottom img{
+  width: 15%;
+  float: left;
+}
+
+.foot-bottom button{
+  float: right;
 }
