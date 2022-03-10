@@ -60,7 +60,8 @@ button.dark {
 header {
   background-color: #3161E0;
   width: 100%;
-  line-height: 50px;
+  height: 65px;
+  line-height: 65px;
 }
 
 .header-top {
@@ -70,6 +71,23 @@ header {
 
 .header-top div {
   float: left;
+}
+
+.head-logo {
+  width:200px;
+}
+
+.head-logo img {
+  vertical-align: middle;
+}
+
+.head-button {
+  width : 100px;
+}
+
+.head-menu {
+  width:calc(100% - 200px - 100px);
+  text-align: center;
 }
 
 nav ul{
@@ -87,30 +105,13 @@ nav ul li a{
   color: white;
 }
 
-.head-logo {
-  float : left;
-  width:200px;
-  padding-top: 10px;
-}
-
-.head-button {
-  float : left;
-  width : 100px;
-}
-
-.menu {
-  float:left;
-  width:calc(100% - 200px - 100px);
-  border:2px solid red;
-  text-align: center;
-}
-
 /* /HEADER */
 
 
 
 /* JUMBOTRON */
 
+/* CORREZZIONE (Già applicata): Il box contenente il testo all'interno del jumbotron va centrato con il padding e non con position absolute perché position non si usa per impaginare. Position absolute rimuove l'elemento dal flusso del documento e gli elementi intorno ad esse non lo vedono. Di conseguenza puó creaare dei problemi nell impaginazioni. */
 .jumbotron {
   background-image: url(../assets/img/jumbo.png);
   background-size: cover;
@@ -118,24 +119,17 @@ nav ul li a{
   height: 350px;
   width: 100%;
   color: white;
-  position: relative;
-}
-
-.jumbotron div {
-  width: 60%;
-  margin: 0 auto;
   text-align: center;
+  padding: 60px;
 }
 
 .jumbo-section{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 80%;
+  margin: 0 auto;
 }
 
 .jumbo-text {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 /* /JUMBOTRON */
@@ -165,7 +159,7 @@ section img{
 
 h2 {
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 [class^="section"] {
@@ -232,7 +226,6 @@ footer .foot-list {
 
 .lang-social .icone .fa-brands{
   padding: 10px 5px;
-  cursor: pointer;
 }
 
 .foot-list .list ul li{

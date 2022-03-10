@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Discord</title>
 </head>
+
+<!-- CORREZZIONE: I bottoni era meglio costruirli come <a> invece che con <button> perché vengono idicizzati meglio e possono essere stilizzati piú facilmente, mentre button hanno giá degli stili di base. -->
+
 <body>
 
   <header>
@@ -17,7 +20,9 @@
       
       <!-- LOGO -->
       <div class="head-logo">
-        <a href="#"><img src="./assets/img/logo.svg" alt="discord-logo"></a>
+        <a href="#">
+          <img src="./assets/img/logo.svg" alt="discord-logo">
+        </a>
       </div>
   
       <!-- NAVIGATOR -->
@@ -47,7 +52,7 @@
     <div class="jumbo-section">
       <div class="jumbo-text">
         <h2>Il tuo posto per parlare</h2>
-        <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunit&aacute; artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo insieme, Discord rende pi&uacute; facile chiacchierare ogni giorno e ritrovarsi pi&uacute; spesso.</p>
+        <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunit&aacute; artistica mondiale,<br> o semplicemente di un piccolo gruppo di amici che vuole passare il tempo insieme, <br> Discord rende pi&uacute; facile chiacchierare ogni giorno e ritrovarsi pi&uacute; spesso.</p>
       </div>
       <button class="big white"><i class="fa-solid fa-arrow-down-long"></i>scarica per mac</button>
       <button class="big dark">Apri Discord nel tuo browser</button>
@@ -129,6 +134,8 @@
   <!-- BOTTOM PORTION -->
   <footer class="clearfix">
 
+      <!-- CORREZZIONE: Le colonne delle liste potevi calcolarla dicendo che erano larghe il 100% del foot-list / 6 e oi specificando che il :first-of-type (la prima colonna, la piú grande) era largha il 100% / 3 cioè il doppio. -->
+      
     <!-- LIST SECTION -->
     <section class="foot-list clearfix">
 
@@ -139,10 +146,11 @@
           Italiano <i class="fa-solid fa-chevron-down"></i>
         </span>
         <span class="icone">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-youtube"></i>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"></a><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"></a><i class="fa-brands fa-youtube"></i></a>
         </span>
       </div>
 
@@ -213,6 +221,3 @@
 
 </body>
 </html>
-
-
-<!-- Jumbotron text position absolute -->
