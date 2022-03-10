@@ -221,7 +221,7 @@ footer .foot-list {
 }
 
 .foot-list .lang-social .lingua img{
-  width: 10%;
+  width: 5%;
 }
 
 .lang-social .icone .fa-brands{
@@ -247,12 +247,13 @@ footer .foot-list {
 
 .foot-list div{
   float: left;
-  margin: 0 20px;
 }
 
+.foot-list .list {
+  width: calc(100% / 6);
+}
 .foot-list .lang-social{
-  width: 150px;
-  margin-right: 100px;
+  width: calc(100% / 3);
 }
 
 .first-of-list span, h3 {
@@ -262,7 +263,6 @@ footer .foot-list {
 footer .foot-bottom {
   width: 80%;
   margin: 10px auto;
-
 }
 
 .foot-bottom img{
